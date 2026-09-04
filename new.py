@@ -1,0 +1,13 @@
+name = input("Enter your name: ")
+age=intput("Enter your age:")
+lab=input("Enter your lab name")
+product_name=input("Enter your product name:")
+product_price=input("Enter your product price:")
+product_count=input("Enter your product count:")
+
+print("Name:",name)
+print("Age:",age)
+print("Lab:",lab)
+print("Product Name:",product_name)
+print("Product Price:",product_price)
+print("Product Count:",product_count)
