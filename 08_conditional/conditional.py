@@ -170,3 +170,15 @@ if age >= 18 and marks >= 40 and has_id == "True":
     print("Eligible")
 else:
     print("Not eligible")
+
+
+
+    has_id = input("enter the value in (true or false): ").strip().lower()
+    true=True
+    false=False
+    if has_id == "true":
+        print("Welcome")
+    elif has_id == "false":
+        print("please bring your id!")
+    else:
+        print("enter the vaild value.")
