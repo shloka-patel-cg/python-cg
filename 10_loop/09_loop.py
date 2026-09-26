@@ -127,6 +127,6 @@ for i in range(3):  # Outer loop for 3 rows
 for i in range(1, 6):  # Rows: 1 to 5
     for j in range(1, 6):  # Columns: 1 to 5
         print(i * j, end="\t")  # Print product followed by a tab space
-    print()  # Move to the next row
+    print()  # Move to the next row       
 
 
