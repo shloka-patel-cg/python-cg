@@ -1,0 +1,461 @@
+# Q.1
+
+# while True:
+#     marks = float(input("Enter marks (between 0 and 100, inclusive): "))
+    
+#     if 0 <= marks <= 100:
+#         break
+#     else:
+#         print("Invalid marks! Please enter a value between 0 and 100.")
+
+# print(f"Accepted marks: {marks}")
+
+# Q.2
+# Problem 2: Positive Integer
+
+# while True:
+#     number = int(input("Enter an integer greater than 0: "))
+    
+    
+#     if number > 0:
+#         break
+#     else:
+#      print("Invalid input! Please enter a number greater than 0.")
+
+# print(f"Accepted number: {number}")
+
+# Q.3
+# Problem 3: Age Validation
+
+# while True:
+#     age = int(input("Enter your age (between 0 and 120): "))
+
+#     if 0 <= age <= 120:
+#         break
+#     else:
+#         print("Invalid age! Please enter a value between 0 and 120.")
+
+# print(f"Accepted age: {age}")
+
+# Q.4
+# Problem 4: Menu Choice
+
+# while True:
+#     print("\n1. View profile")
+#     print("2. Edit profile")
+#     print("3. Settings")
+#     print("4. Exit")
+    
+#     choice = int(input("Enter your choice (1-4): "))
+    
+#     if 1 <= choice <= 4:
+#         break
+#     else:
+#         print("Invalid choice! Please select an option between 1 and 4.")
+
+# print(f"Selected option: {choice}")
+
+# Q.5
+# Problem 5: Password Length
+
+# while True:
+#     password = input("Enter a password (at least 8 characters): ")\
+    
+#     if len(password.strip()) >= 8:
+#         print("Success! Valid password entered.")
+#         break
+#     else:
+#         print("Password too short! It must contain at least 8 characters (excluding outer spaces)
+
+# Q.6
+# temperature = float('inf')
+
+# Keep asking until a valid temperature is entered
+# while temperature < -20 or temperature > 45:
+#     temperature = float(input("Enter a temperature between -20 and 45 (inclusive): "))
+    
+#     if temperature < -20 or temperature > 45:
+#         print("Invalid temperature! Please enter a value between -20 and 45.")
+
+# print(f"Success! Valid temperature accepted: {temperature}")
+
+# Q.7
+# balance = 5000.0
+# withdrawal = 0.0
+
+# print(f"Current Available Balance: ₹{balance}")
+
+# while withdrawal <= 0 or withdrawal > balance:
+#     withdrawal = float(input("Enter withdrawal amount (₹): "))
+    
+#     if withdrawal <= 0:
+#         print("Invalid amount! Withdrawal must be greater than zero.")
+#     elif withdrawal > balance:
+#         print(f"Insufficient funds! Amount exceeds available balance of ₹{balance}.")
+
+# balance -= withdrawal
+# print(f"\nWithdrawal successful! Amount withdrawn: ₹{withdrawal}")
+# print(f"Updated Bank Balance: ₹{balance}")
+
+# Q.8
+# username = ""
+
+# while True:
+#     username = input("Enter a username: ")
+    
+#     stripped_username = username.strip()
+    
+#     if stripped_username == "":
+#         print("Error: Username cannot be empty.")
+#     elif len(stripped_username) < 5:
+#         print("Error: Username must contain at least 5 characters (excluding outer spaces).")
+#     elif " " in stripped_username:
+#         print("Error: Username cannot contain spaces inside.")
+#     else:
+#         break
+
+# print(f"\nSuccess! Accepted username: '{stripped_username}'")
+
+# Q.9
+# number = 0
+
+# while number <= 0 or number % 3 != 0 or number % 5 != 0:
+#     number = int(input("Enter a positive integer divisible by both 3 and 5: "))
+    
+#     if number <= 0:
+#         print("Invalid input! Please enter a positive integer.")
+#     elif number % 3 != 0 or number % 5 != 0:
+#         print("Error: The number must be divisible by both 3 and 5 (e.g., 15, 30, 45).")
+
+# print(f"\nSuccess! Accepted number: {number}")
+
+# Q.10
+# SECRET_PIN = 2468
+# max_attempts = 3
+# attempts = 0
+# access_granted = False
+
+# # Loop until maximum attempts are reached or PIN is correct
+# while attempts < max_attempts:
+#     entered_pin = int(input(f"Attempt {attempts + 1} of {max_attempts} - Enter PIN: "))
+    
+#     if entered_pin == SECRET_PIN:
+#         print("\nAccess granted! Correct PIN entered.")
+#         access_granted = True
+#         break
+#     else:
+#         attempts += 1
+#         remaining = max_attempts - attempts
+#         if remaining > 0:
+#             print(f"Incorrect PIN. You have {remaining} attempt(s) remaining.\n")
+
+# # If all attempts fail
+# if not access_granted:
+#     print("\nAccess denied! Maximum attempts exceeded.")
+
+# Q.11
+# number = 0
+
+# # Keep 
+# while number < 10 or number > 50:
+#     number = int(input("Enter an integer between 10 and 50 (inclusive): "))
+    
+#     if number < 10 or number > 50:
+#         print("Invalid input! The number must be between 10 and 50.")
+
+# # Once valid, check if even or odd
+# print(f"\nSuccess! Accepted number: {number}")
+
+# if number % 2 == 0:
+#     print(f"The number {number} is Even.")
+# else:
+#     print(f"The number {number} is Odd.")
+
+# Q.12
+# balance = 2000.0
+# deposit = 0.0
+
+# print(f"Current Account Balance: ₹{balance}")
+
+# while deposit <= 0:
+#     deposit = float(input("Enter deposit amount (₹): "))
+    
+#     if deposit <= 0:
+#         print("Invalid amount! Deposit must be a positive number greater than zero.")
+
+# balance += deposit
+# print(f"\nDeposit successful! Amount deposited: ₹{deposit}")
+# print(f"Updated Bank Balance: ₹{balance}")
+ 
+# Part 2
+# Q.13
+# number = 0
+
+# while number < 1 or number > 100:
+#     number = int(input("Enter an integer between 1 and 100 (inclusive): "))
+    
+#     if number < 1 or number > 100:
+#         print("Invalid input! Please enter a number between 1 and 100.")
+
+# print(f"\nSuccess! Valid integer accepted: {number}")
+
+# Q.14
+# while True:
+#     marks = float(input("Enter marks (between 0 and 100): "))
+    
+#     if 0 <= marks <= 100:
+#         break
+#     else:
+#         print("Invalid marks! Please enter a value between 0 and 100.")
+
+# if marks >= 75:
+#     print("Result: Distinction")
+# elif marks >= 60:
+#     print("Result: First Class")
+# elif marks >= 35:
+#     print("Result: Pass")
+# else:
+#     print("Result: Fail")
+
+#  Q.15
+# while True:
+#     username = input("Enter username: ")
+#     password = input("Enter password: ")
+    
+#     # 1. Validate Username
+#     trimmed_username = username.strip()
+#     is_username_valid = (
+#         len(trimmed_username) >= 5 and 
+#         " " not in trimmed_username
+#     )
+    
+#     # 2. Validate Password
+#     trimmed_password = password.strip()
+#     is_password_valid = (
+#         len(password) >= 8 and 
+#         len(trimmed_password) > 0
+#     )
+    
+#     if is_username_valid and is_password_valid:
+#         print("Success! Username and password are valid.")
+#         break
+#     else:
+#         print("Invalid credentials. Please follow the rules and try again.\n")
+
+#  Q.16
+# while True:
+#     operator = input("Enter operator (+, -, *, /): ")
+#     if operator in ('+', '-', '*', '/'):
+#         break
+#     print("Invalid operator! Please enter +, -, *, or /.")
+          
+# num1 = float(input("Enter first number: "))
+
+# while True:
+#     num2 = float(input("Enter second number: "))
+    
+#     if operator == '/' and num2 == 0:
+#         print("Error: Division by zero is not allowed. Please enter a non-zero divisor.")
+#     else:
+#       break
+
+# if operator == '+':
+#     result = num1 + num2
+# elif operator == '-':
+#     result = num1 - num2
+# elif operator == '*':
+#     result = num1 * num2
+# elif operator == '/':
+#     result = num1 / num2
+
+# print(f"Result: {num1} {operator} {num2} = {result}")
+
+#  Q.17
+# balance = 10000.0
+
+# while True:
+#     print("\n--- Banking Menu ---")
+#     print("1. Check balance")
+#     print("2. Deposit money")
+#     print("3. Withdraw money")
+#     print("4. Exit")
+    
+#     choice = input("Enter your choice (1-4): ")
+    
+#     if choice == '1':
+#         print(f"Current Balance: ₹{balance:.2f}")
+        
+#     elif choice == '2':
+#         while True:
+#             deposit_amount = float(input("Enter amount to deposit: ₹"))
+#             if deposit_amount > 0:
+#                 balance += deposit_amount
+#                 print(f"Successfully deposited ₹{deposit_amount:.2f}. New Balance: ₹{balance:.2f}")
+#                 break
+#             else:
+#                 print("Invalid amount! Deposits must be greater than zero.")
+                
+#     elif choice == '3':
+#         while True:
+#             withdrawal_amount = float(input("Enter amount to withdraw: ₹"))
+#             if withdrawal_amount <= 0:
+#                 print("Invalid amount! Withdrawals must be greater than zero.")
+#             elif withdrawal_amount > balance:
+#                 print(f"Insufficient funds! Amount exceeds current balance of ₹{balance:.2f}.")
+#             else:
+#                 balance -= withdrawal_amount
+#                 print(f"Successfully withdrew ₹{withdrawal_amount:.2f}. Remaining Balance: ₹{balance:.2f}")
+#                 break
+                
+#     elif choice == '4':
+#         print("Thank you for using our banking system. Goodbye!")
+#         break
+        
+#     else:
+#         print("Invalid choice! Please select an option between 1 and 4.")
+
+# Q.18
+# while True:
+#     month = int(input("Enter month number (1 to 12): "))
+#     if 1 <= month <= 12:
+#         break
+#     print("Invalid month! Please enter a number between 1 and 12.")
+
+# while True:
+#     day = int(input("Enter day number (1 to 31): "))
+#     if 1 <= day <= 31:
+#         break
+#     print("Invalid day! Please enter a number between 1 and 31.")
+
+# print(f"\nSuccess! Accepted Date - Month: {month}, Day: {day}")
+
+# Q.19
+# while True:
+#     quantity = int(input("Enter product quantity: "))
+#     if quantity > 0:
+#         break
+#     print("Invalid quantity! Quantity must be a positive integer.")
+
+# while True:
+#     unit_price = float(input("Enter unit price: "))
+#     if unit_price > 0:
+#         break
+#     print("Invalid unit price! Unit price must be greater than zero.")
+
+# total_cost = quantity * unit_price
+# print(f"\n--- Order Summary ---")
+# print(f"Quantity: {quantity}")
+# print(f"Unit Price: ₹{unit_price:.2f}")
+# print(f"Total Cost: ₹{total_cost:.2f}")
+
+# Q.20
+
+# while True:
+#     count = int(input("How many numbers do you want to enter? (1 to 20): "))
+#     if 1 <= count <= 20:
+#         break
+#     print("Invalid count! Please enter a number between 1 and 20.")
+
+# total_sum = 0
+# for i in range(1, count + 1):
+#     while True:
+#         num = float(input(f"Enter number {i}: "))
+#         break 
+
+
+#     total_sum += num
+
+# average = total_sum / count
+# print(f"\nSuccessfully collected {count} numbers.")
+# print(f"The average is: {average:.2f}")
+
+#  Q.21
+# while True:
+#     password = input("Enter a strong password: ")
+    
+#     failed_rules = []
+#     if len(password) < 8:
+#         failed_rules.append("- Must contain at least 8 characters.")
+        
+#     if not any(char.isupper() for char in password):
+#         failed_rules.append("- Must contain at least one uppercase letter.")
+        
+#     if not any(char.islower() for char in password):
+#         failed_rules.append("- Must contain at least one lowercase letter.")
+        
+#     if not any(char.isdigit() for char in password):
+#         failed_rules.append("- Must contain at least one digit.")
+        
+#     if any(char.isspace() for char in password):
+#         failed_rules.append("- Must not contain any whitespace characters (spaces, tabs, etc.).")
+        
+#     if len(failed_rules) == 0:
+#         print("\nSuccess! Your password meets all security rules.")
+#         break
+#     else:
+#         print("\nInvalid password. The following rules were not satisfied:")
+#         for rule in failed_rules:
+#             print(rule)
+#         print("Please try again.\n")
+
+# Q.22
+# number = 0
+
+# while not (1 <= number <= 10):
+#     number = int(input("Enter an integer from 1 to 10: "))
+    
+#     if not (1 <= number <= 10):
+#         print("Invalid input! Please enter a value between 1 and 10.")
+
+# print(f"\nSuccess! Accepted integer: {number}")
+
+# Q.23
+# while True:
+#     score1 = float(input("Enter score 1 (0 to 100): "))
+#     if 0 <= score1 <= 100:
+#         break
+#     print("Invalid score! Please enter a value between 0 and 100.")
+
+# while True:
+#     score2 = float(input("Enter score 2 (0 to 100): "))
+#     if 0 <= score2 <= 100:
+#         break
+#     print("Invalid score! Please enter a value between 0 and 100.")
+
+# while True:
+#     score3 = float(input("Enter score 3 (0 to 100): "))
+#     if 0 <= score3 <= 100:
+#         break
+#     print("Invalid score! Please enter a value between 0 and 100.")
+
+# total_score = score1 + score2 + score3
+# average_score = total_score / 3
+
+# print("\n--- Summary ---")
+# print(f"Scores: {score1}, {score2}, {score3}")
+# print(f"Total Score: {total_score:.2f}")
+# print(f"Average Score: {average_score:.2f}")
+
+# Q.24
+# balance = 10000.0
+
+# while True:
+#     withdrawal_amount = float(input("Enter withdrawal amount (must be a multiple of ₹100): ₹"))
+    
+#     if withdrawal_amount <= 0:
+#         print("Invalid amount! Amount must be positive.")
+        
+#     elif withdrawal_amount > balance:
+#         print(f"Insufficient funds! Amount exceeds current balance of ₹{balance:.2f}.")
+        
+#     elif withdrawal_amount % 100 != 0:
+#         print("Invalid amount! Withdrawal amount must be a multiple of ₹100.")
+        
+#     else:
+#         break
+
+# balance -= withdrawal_amount
+
+# print("\n--- Transaction Successful ---")
+# print(f"Withdrawn Amount: ₹{withdrawal_amount:.2f}")
+# print(f"Remaining Balance: ₹{balance:.2f}")
