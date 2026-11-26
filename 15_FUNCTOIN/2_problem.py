@@ -295,6 +295,24 @@
 # total = order_summary("Laptop", delivery_fee=60)
 
 # print(total) 
+    
+
+
+def make_counter():
+  count = 0  # Outer function નો વેરિયેબલ
+
+  def increment():
+    nonlocal count  # Enclosing scope ના વેરિયેબલની વેલ્યુ બદલવા માટે
+    count += 1
+    return count
+
+  return increment
+
+
+counter = make_counter()
+print(counter())  # આઉટપુટ: 1
+print(counter())  # આઉટપુટ: 2
+print(counter())  # આઉટપુટ: 3
 
 
 
