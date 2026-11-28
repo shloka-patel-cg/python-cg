@@ -1,0 +1,108 @@
+# que=1
+
+# def fun(n):
+#     massage="Hello"
+#     if n<=0:
+#         return 
+    
+#     print(massage)
+#     fun(n-1) 
+
+# fun(3)
+
+
+# que=2
+
+# def even(n):
+#     if n < 2:
+#         return
+#     even(n - 1)
+#     if n % 2 == 0:
+#         print(n)
+
+
+# even(11)
+
+# qque=3
+
+# def sum_odd_numbers(n):
+#     if n <= 0:
+#         return 0
+#     if n % 2 == 1:
+#         return n + sum_odd_numbers(n - 1)
+#     return sum_odd_numbers(n - 1)
+
+
+# print(sum_odd_numbers(7))
+
+# 4. 
+# def count_digit(number, target):
+#     if number == 0:
+#         if target == 0:
+#             return 1
+#         return 0
+
+#     if number % 10 == target:
+#         return 1 + count_digit(number // 10, target)
+
+#     return count_digit(number // 10, target)
+
+
+# # 5.
+# def product_digits(n):
+#     if n < 10:
+#         return n
+
+#     return (n % 10) * product_digits(n // 10)
+
+
+# # 6. 
+# def first_digit(n):
+#     if n < 10:
+#         return n
+
+#     return first_digit(n // 10)
+
+
+# # 7. 
+# def contains_digit(number, target):
+#     if number == 0:
+#         return target == 0
+
+#     if number % 10 == target:
+#         return True
+
+#     return contains_digit(number // 10, target)
+
+
+# # 8. 
+# def string_length(text):
+#     if text == "":
+#         return 0
+
+#     return 1 + string_length(text[1:])
+
+
+# # 9. 
+# def count_vowels(text):
+#     if text == "":
+#         return 0
+
+#     if text[0] in "aeiou":
+#         return 1 + count_vowels(text[1:])
+
+#     return count_vowels(text[1:])
+
+
+# # 10. 
+# def is_palindrome(word):
+#     def check(left, right):
+#         if left >= right:
+#             return True
+
+#         if word[left] != word[right]:
+#             return False
+
+#         return check(left + 1, right - 1)
+
+#     return check(0, len(word) - 1)
